@@ -1,0 +1,87 @@
+/* Style général */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #ff0073, #00c6ff);
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Conteneur principal */
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+/* En-tête */
+.header {
+  margin-bottom: 20px;
+}
+
+.header .logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.header h2 {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.header p {
+  font-size: 0.9em;
+}
+
+/* Formulaire */
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input, select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+button {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff0073;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00c6ff;
+}
+
+/* Pied de page */
+.footer {
+  margin-top: 20px;
+}
+
+.footer p {
+  font-size: 0.8em;
+  color: #fff;
+}

